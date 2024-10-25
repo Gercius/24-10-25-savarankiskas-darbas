@@ -1,0 +1,172 @@
+/* Base */
+
+:root {
+    --bg-container: linear-gradient(292.92deg, #e6e6e4 7.23%, #f0e8e2 97.74%);
+    --bg-light: #ffffff;
+    --bg-button: #96c67f;
+
+    --text-dark: #1f1d2a;
+    --text-light: #9b948e;
+
+    --font-semibold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: var(--bg-container);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+/* Layout */
+
+.container-fluid {
+    max-width: 1512px;
+    padding-top: 1rem;
+    /* padding: 40px 120px; */
+    /* padding: 20px; */
+}
+
+/* Header */
+
+header .logo span {
+    font-size: 32px;
+}
+
+header nav a:hover {
+    padding: 0 0.15rem;
+    border-bottom: 2px solid #000000;
+}
+
+header .sign-in-btn {
+    padding: 0.55rem 1.75rem;
+    border-radius: 6px;
+    border: 1px solid #000000;
+}
+
+header .sign-in-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Hero */
+
+.hero-description {
+    /* max-width: 579px; */
+}
+
+.hero-description h1 {
+    font-weight: var(--font-semibold);
+    font-size: clamp(1.5rem, 2.5vw, 55px);
+    line-height: 1.9;
+    font-weight: 600;
+    text-align: left;
+}
+
+.hero-btn {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    background-color: var(--bg-button);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+
+/* font-size: 20px;
+padding: 1.25rem 1.75rem;
+border-radius: 6px; */
+
+.hero-btn:hover {
+    transform: scale(1.05);
+}
+
+.hero-person {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.hero-person .main-img {
+    border-radius: 50%;
+    padding: 0 1.9rem;
+}
+
+.hero-person .play-btn-img-wrapper {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    background: #9499b7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+/* max-width: 80px;
+height: 80px; */
+
+.hero-person .play-btn-img-wrapper img {
+    margin-left: 0.2rem;
+    width: 20px;
+}
+
+.hero-person .about-card {
+    position: absolute;
+    bottom: -6%;
+    left: 10%;
+    background-color: var(--bg-light);
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    border-radius: 20px;
+}
+/* padding: 1.4rem 2rem 1.4rem 1.25rem; */
+
+.hero-person .about-card h4 {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top: 0.25rem;
+}
+
+.hero-person .about-card p {
+    font-size: 14px;
+}
+
+.hero-person .about-card .stars {
+    margin-top: 0.75rem;
+}
+
+.hero-person .about-card .stars * {
+    /* width: 18px; */
+}
+
+.hero-person .about-card .stars *:not(:first-child) {
+    margin-left: 0.2rem;
+}
