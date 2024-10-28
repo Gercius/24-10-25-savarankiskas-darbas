@@ -7,8 +7,6 @@
 
     --text-dark: #1f1d2a;
     --text-light: #9b948e;
-
-    --font-semibold: 600;
 }
 
 * {
@@ -53,7 +51,7 @@ a {
 /* Layout */
 
 .container-fluid {
-    max-width: 1512px;
+    max-width: 1272px;
     padding-top: 1rem;
     /* padding: 40px 120px; */
     /* padding: 20px; */
@@ -65,9 +63,22 @@ header .logo span {
     font-size: 32px;
 }
 
-header nav a:hover {
-    padding: 0 0.15rem;
+header .navbar {
+    background-color: transparent !important;
+}
+
+header .navbar div.container-fluid {
+    padding: 0;
+}
+
+header .navbar .navbar-nav {
+    max-width: fit-content;
+}
+
+header .navbar a:hover {
+    font-size: 600;
     border-bottom: 2px solid #000000;
+    margin-top: -2px;
 }
 
 header .sign-in-btn {
@@ -87,7 +98,7 @@ header .sign-in-btn:hover {
 }
 
 .hero-description h1 {
-    font-weight: var(--font-semibold);
+    font-weight: 600;
     font-size: clamp(1.5rem, 2.5vw, 55px);
     line-height: 1.9;
     font-weight: 600;

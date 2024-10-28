@@ -12,30 +12,48 @@
     </head>
     <body>
         <div class="container-fluid">
-            <header class="d-flex flex-column d-xl-flex align-items-center gap-3">
-                <div class="logo">
-                    <span class="">Shayna</span>
-                </div>
-                <nav>
-                    <ul class="d-flex flex-column align-items-center align-self-center">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Start</a>
-                        </li>
-                        <li>
-                            <a href="#">Browse</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#">Story</a>
-                        </li>
-                    </ul>
+            <header class="d-flex justify-content-between align-items-lg-center">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary order-lg-2">
+                    <div class="container-fluid">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link" href="#">Sign In</a>
+                                </li>
+                                <li class="nav-item px-lg-4">
+                                    <a class="nav-link py-lg-0 px-lg-1" href="#">Home</a>
+                                </li>
+                                <li class="nav-item px-lg-4">
+                                    <a class="nav-link py-lg-0 px-lg-1" href="#">Start</a>
+                                </li>
+                                <li class="nav-item px-lg-4">
+                                    <a class="nav-link py-lg-0 px-lg-1" href="#">Browse</a>
+                                </li>
+                                <li class="nav-item px-lg-4">
+                                    <a class="nav-link py-lg-0 px-lg-1" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item px-lg-4">
+                                    <a class="nav-link py-lg-0 px-lg-1" href="#">Story</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-                <a class="sign-in-btn" href="#">Sign In</a>
+                <a class="sign-in-btn order-lg-3 d-none d-lg-block" href="#">Sign In</a>
+                <div class="logo order-lg-1">
+                    <span>Shayna</span>
+                </div>
             </header>
 
             <main class="hero mt-5 position-relative">
