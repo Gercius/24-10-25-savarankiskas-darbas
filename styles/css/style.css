@@ -25,6 +25,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background: var(--bg-container);
+    color: var(--text-dark);
 }
 
 h1,
@@ -53,8 +54,12 @@ a {
 .container-fluid {
     max-width: 1272px;
     padding-top: 1rem;
-    /* padding: 40px 120px; */
-    /* padding: 20px; */
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-top: 2.5rem;
+    }
 }
 
 /* Header */
@@ -77,14 +82,14 @@ header .navbar .navbar-nav {
 
 header .navbar a:hover {
     font-size: 600;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid var(--text-dark);
     margin-top: -2px;
 }
 
 header .sign-in-btn {
     padding: 0.55rem 1.75rem;
     border-radius: 6px;
-    border: 1px solid #000000;
+    border: 1px solid var(--text-dark);
 }
 
 header .sign-in-btn:hover {
