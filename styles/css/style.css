@@ -98,16 +98,37 @@ header .sign-in-btn:hover {
 
 /* Hero */
 
-.hero-description {
-    /* max-width: 579px; */
+.hero {
+    margin-top: 1.5rem;
 }
+
+@media (min-width: 992px) {
+    .hero {
+        margin-top: 6.25rem;
+    }
+}
+
+/* Description */
 
 .hero-description h1 {
     font-weight: 600;
-    font-size: clamp(1.5rem, 2.5vw, 55px);
-    line-height: 1.9;
+    font-size: clamp(1.5rem, 3.25vw, 55px);
+    line-height: 1.5;
     font-weight: 600;
     text-align: left;
+}
+
+.hero-description p {
+    margin: 1.5rem 0;
+    line-height: 30px;
+    color: var(--text-light);
+}
+
+@media (min-width: 992px) {
+    .hero-description p {
+        max-width: 435px;
+        margin: 1.875rem 0 3.125rem 0;
+    }
 }
 
 .hero-btn {
@@ -120,17 +141,30 @@ header .sign-in-btn:hover {
     border-radius: 6px;
 }
 
-/* font-size: 20px;
-padding: 1.25rem 1.75rem;
-border-radius: 6px; */
+@media (min-width: 992px) {
+    .hero-btn {
+        margin: 0;
+        font-size: 20px;
+        padding: 1.25rem 1.75rem;
+        border-radius: 6px;
+    }
+}
 
 .hero-btn:hover {
     transform: scale(1.05);
 }
 
+/* Person */
+
 .hero-person {
     width: fit-content;
-    margin: 0 auto;
+    margin: 1.5rem auto 0 auto;
+}
+
+@media (min-width: 992px) {
+    .hero-person {
+        margin: 0 2.5rem 0 0;
+    }
 }
 
 .hero-person .main-img {
@@ -147,12 +181,23 @@ border-radius: 6px; */
     height: 60px;
     border-radius: 50%;
 }
-/* max-width: 80px;
-height: 80px; */
 
 .hero-person .play-btn-img-wrapper img {
     margin-left: 0.2rem;
     width: 20px;
+}
+
+@media (min-width: 992px) {
+    .hero-person .play-btn-img-wrapper {
+        right: -2%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero-person .play-btn-img-wrapper img {
+        margin-left: 0.2rem;
+        width: 24px;
+    }
 }
 
 .hero-person .about-card {
@@ -163,7 +208,12 @@ height: 80px; */
     padding: 0.7rem 1rem 0.7rem 1rem;
     border-radius: 20px;
 }
-/* padding: 1.4rem 2rem 1.4rem 1.25rem; */
+
+@media (min-width: 992px) {
+    .hero-person .about-card {
+        padding: 1.4rem 2rem 1.4rem 1.25rem;
+    }
+}
 
 .hero-person .about-card h4 {
     font-size: 1rem;
@@ -173,6 +223,7 @@ height: 80px; */
 
 .hero-person .about-card p {
     font-size: 14px;
+    color: var(--text-light);
 }
 
 .hero-person .about-card .stars {
@@ -185,4 +236,41 @@ height: 80px; */
 
 .hero-person .about-card .stars *:not(:first-child) {
     margin-left: 0.2rem;
+}
+
+/* Trusted by */
+
+.trusted-by {
+    margin-top: 4rem;
+    max-width: 763px;
+}
+
+@media (min-width: 768px) {
+    .trusted-by {
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .trusted-by {
+        margin-top: 8rem;
+    }
+}
+
+.trusted-by h3 {
+    font-size: 16px;
+}
+
+.trusted-by .companies {
+    margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .trusted-by .companies {
+        margin-top: 1.875rem;
+    }
+}
+
+.trusted-by .companies img {
+    max-height: 30px;
 }
