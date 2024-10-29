@@ -90,9 +90,9 @@ h4 {
 
 .lines {
     position: absolute;
-    width: 60%;
+    /* width: 60%; */
     top: 0;
-    left: 0;
+    left: -10%;
     z-index: -10;
 }
 
