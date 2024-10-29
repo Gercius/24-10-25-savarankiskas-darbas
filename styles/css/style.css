@@ -49,16 +49,40 @@ a {
     color: var(--text-dark);
 }
 
+/* Typography */
+
+h1 {
+    font-size: clamp(1.5rem, 3.25vw, 55px);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 /* Layout */
 
 .container-fluid {
     max-width: 1272px;
-    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
     .container-fluid {
-        padding-top: 2.5rem;
+        padding: 2.5rem 0 6.25rem 0;
     }
 }
 
@@ -68,6 +92,7 @@ header .logo span {
     font-size: 32px;
 }
 
+/* Override bootsrap style */
 header .navbar {
     background-color: transparent !important;
 }
@@ -111,10 +136,6 @@ header .sign-in-btn:hover {
 /* Description */
 
 .hero-description h1 {
-    font-weight: 600;
-    font-size: clamp(1.5rem, 3.25vw, 55px);
-    line-height: 1.5;
-    font-weight: 600;
     text-align: left;
 }
 
@@ -230,10 +251,6 @@ header .sign-in-btn:hover {
     margin-top: 0.75rem;
 }
 
-.hero-person .about-card .stars * {
-    /* width: 18px; */
-}
-
 .hero-person .about-card .stars *:not(:first-child) {
     margin-left: 0.2rem;
 }
@@ -257,10 +274,6 @@ header .sign-in-btn:hover {
     }
 }
 
-.trusted-by h3 {
-    font-size: 16px;
-}
-
 .trusted-by .companies {
     margin-top: 1rem;
 }
@@ -273,4 +286,71 @@ header .sign-in-btn:hover {
 
 .trusted-by .companies img {
     max-height: 30px;
+}
+
+/* Team */
+
+.team {
+    margin-top: 4rem;
+}
+
+@media (min-width: 992px) {
+    .team {
+        margin-top: 6.25rem;
+    }
+}
+
+.team > p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.team h2 {
+    margin-top: 0.625rem;
+}
+
+.team h2 .underline {
+    position: relative;
+}
+
+.team h2 .underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 19%;
+    height: 6px;
+    background-color: #96c67f;
+    z-index: -1;
+}
+
+.team .cards {
+    margin-top: 2rem;
+    gap: 1.875rem;
+}
+
+@media (min-width: 992px) {
+    .team .cards {
+        margin-top: 4.375rem;
+    }
+}
+
+/* Remove bootsrap default styles for card class */
+.team .cards .card {
+    all: unset;
+    background-color: var(--bg-light);
+    border-radius: 20px;
+}
+
+.team .cards .card-text {
+    padding: 1.25rem;
+}
+
+.team .cards .card-text h4 {
+    font-size: 20px;
+}
+
+.team .cards .card-text p {
+    margin-top: 0.5rem;
+    color: var(--text-light);
 }
