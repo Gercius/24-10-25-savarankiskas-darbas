@@ -89,8 +89,8 @@ h4 {
 /* Background lines */
 
 .lines {
+    max-width: 100%;
     position: absolute;
-    /* width: 60%; */
     top: 0;
     left: -10%;
     z-index: -10;
@@ -328,7 +328,7 @@ header .sign-in-btn:hover {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 19%;
+    bottom: 18%;
     height: 6px;
     background-color: #96c67f;
     z-index: -1;
