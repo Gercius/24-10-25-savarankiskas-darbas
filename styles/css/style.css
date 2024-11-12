@@ -111,6 +111,16 @@ header .navbar div.container-fluid {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    header .navbar .navbar-collapse {
+        width: 100vw;
+        position: absolute;
+        margin-top: 18.5rem;
+        z-index: 100;
+        background: #f0e8e2;
+    }
+}
+
 header .navbar .navbar-nav {
     max-width: fit-content;
 }
